@@ -178,6 +178,11 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+    <keybind key="C-A-S-W-F12">
+      <action name="Execute">
+        <command>jgmenu_run</command>
+      </action>
+    </keybind>
     <keybind key="A-Shift_L">
       <action name="Execute">
         <command>~/.local/bin/layout_switch.sh</command>

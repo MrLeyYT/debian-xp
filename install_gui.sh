@@ -62,6 +62,7 @@ wget -O ~/.config/picom/picom.conf https://raw.githubusercontent.com/fakename001
 wget -O ~/.config/openbox/autostart https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/openbox/autostart
 wget -O ~/.config/ranger/rc.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/ranger/rc.conf
 wget -O ~/.config/cava/config https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/cava/config
+wget -O ~/.config/pcmanfm/default/pcmanfm.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pcmanfm/default/pcmanfm.conf
 
 cat << EOF > $HOME/.config/pcmanfm/default/desktop-items-0.conf
 [*]

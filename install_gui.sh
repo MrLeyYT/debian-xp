@@ -12,7 +12,9 @@ sudo apt install -y --no-install-recommends \
     lxsession-logout dunst picom dbus-x11 alacritty gxkb libnotify-bin python3-gi gir1.2-notify-0.7
 
 sudo apt install -y --no-install-recommends firefox-esr mousepad mpv galculator gpicview xarchiver lxtask gdebi
-sudo apt purge fortune-mod -y
+sudo apt purge fortune-mod -y --no-install-recommends
+sudo apt purge "^ibus.*" -y --no-install-recommends
+sudo apt purge mlterm mlterm-tiny mlterm-common --no-install-recommends -y
 sudo apt autoremove -y
 
 sudo apt install -y --no-install-recommends fastfetch cava ranger

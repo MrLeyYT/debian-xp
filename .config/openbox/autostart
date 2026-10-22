@@ -6,12 +6,4 @@ pcmanfm --desktop &
 gxkb &
 udiskie -t -F &
 pnmixer &
-
-if [ -f ~/.config/openbox/.first_run ]; then
-    (sleep 2 && lxappearance) &
-    (sleep 3 && obconf) &
-    (sleep 4 && pavucontrol) &
-    (sleep 5 && sudo apt purge "^ibus.*" -y) &
-    (sleep 6 && sudo apt purge mlterm mlterm-tiny mlterm-common --no-install-recommends -y && sudo apt autoremove -y && sudo apt clean) &
-    rm -f ~/.config/openbox/.first_run
-fi
+jgmenu &

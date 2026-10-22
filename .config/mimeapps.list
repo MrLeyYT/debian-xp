@@ -1,0 +1,9 @@
+[Default Applications]
+image/jpeg=gpicview.desktop
+application/xml=org.xfce.mousepad.desktop
+application/vnd.debian.binary-package=gdebi.desktop
+
+[Added Associations]
+image/jpeg=gpicview.desktop;
+application/xml=org.xfce.mousepad.desktop;
+application/vnd.debian.binary-package=gdebi.desktop;

@@ -1,0 +1,16 @@
+[window]
+padding = { x = 6, y = 6 }
+dynamic_title = true
+opacity = 0.70
+
+[font]
+normal = { family = "monospace", style = "Regular" }
+size = 11.0
+
+[colors.primary]
+background = "#1e1e1e"
+foreground = "#ffffff"
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+blink_interval = 500

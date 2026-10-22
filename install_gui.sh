@@ -1,9 +1,12 @@
 #!/bin/bash
 
+echo "blacklist ntfs3" > /etc/modprobe.d/blacklist-ntfs3.conf
+sudo modprobe -r ntfs3
+
 sudo apt update
 
 sudo apt install -y --no-install-recommends gvfs gvfs-backends scrot
-sudo apt install -y --no-install-recommends git wget 7zip unzip zip exfatprogs dosfstools librsvg2-common libgdk-pixbuf2.0-common libgdk-pixbuf-2.0-0
+sudo apt install -y --no-install-recommends git wget 7zip unzip zip ntfs-3g exfatprogs dosfstools librsvg2-common libgdk-pixbuf2.0-common libgdk-pixbuf-2.0-0
 sudo apt install -y --no-install-recommends pipewire pipewire-audio-client-libraries pipewire-pulse pipewire-alsa wireplumber pavucontrol pnmixer
 sudo apt install -y --no-install-recommends udisks2
 

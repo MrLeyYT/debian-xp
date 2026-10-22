@@ -18,6 +18,8 @@ sudo apt install -y --no-install-recommends firefox-esr mousepad mpv galculator 
 sudo apt purge fortune-mod -y
 sudo apt autoremove -y
 
+suso apt install -y --no-install-recommends neofetch cava ranger
+
 sudo apt install -y --no-install-recommends locales
 echo "en_US.UTF-8 UTF-8" | sudo tee /etc/locale.gen
 echo "ru_RU.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
@@ -41,6 +43,8 @@ mkdir -p ~/.config/tint2
 mkdir -p ~/.config/gtk-3.0
 mkdir -p ~/.config/pnmixer
 mkdir -p ~/.config/picom
+mkdir -p ~/.config/ranger
+mkdir -p ~/.config/cava
 mkdir -p ~/.local/share/gxkb/flags
 mkdir -p ~/.local/bin
 
@@ -59,6 +63,8 @@ wget -O ~/.config/pnmixer/config https://raw.githubusercontent.com/fakename00121
 wget -O ~/.config/alacritty/alacritty.toml https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/alacritty/alacritty.toml
 wget -O ~/.config/picom/picom.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/picom/picom.toml
 wget -O ~/.config/openbox/autostart https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/openbox/autostart
+wget -O ~/.config/ranger/rc.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/ranger/rc.conf
+wget -O ~/.config/cava/config https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/cava/config
 
 cat << EOF > $HOME/.config/pcmanfm/default/desktop-items-0.conf
 [*]

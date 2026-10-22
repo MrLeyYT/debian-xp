@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "blacklist ntfs3" > /etc/modprobe.d/blacklist-ntfs3.conf
+sudo sh -c 'echo "blacklist ntfs3" > /etc/modprobe.d/blacklist-ntfs3.conf'
 sudo modprobe -r ntfs3
 
 sudo apt update

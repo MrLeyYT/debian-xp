@@ -18,7 +18,7 @@ sudo apt install -y --no-install-recommends firefox-esr mousepad mpv galculator 
 sudo apt purge fortune-mod -y
 sudo apt autoremove -y
 
-sudo apt install -y --no-install-recommends neofetch cava ranger
+sudo apt install -y --no-install-recommends fastfetch cava ranger
 
 sudo apt install -y --no-install-recommends locales
 echo "en_US.UTF-8 UTF-8" | sudo tee /etc/locale.gen

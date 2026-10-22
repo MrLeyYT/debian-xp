@@ -58,7 +58,7 @@ wget -O ~/.config/openbox/rc.xml https://raw.githubusercontent.com/fakename00121
 wget -O ~/.config/mimeapps.list https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/mimeapps.list
 wget -O ~/.config/pnmixer/config https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pnmixer/config
 wget -O ~/.config/alacritty/alacritty.toml https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/alacritty/alacritty.toml
-wget -O ~/.config/picom/picom.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/picom/picom.toml
+wget -O ~/.config/picom/picom.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/picom/picom.conf
 wget -O ~/.config/openbox/autostart https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/openbox/autostart
 wget -O ~/.config/ranger/rc.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/ranger/rc.conf
 wget -O ~/.config/cava/config https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/cava/config

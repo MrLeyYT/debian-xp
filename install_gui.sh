@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo -e "blacklist ntfs3\nblacklist ntfs" | sudo tee /etc/modprobe.d/disable-ntfs.conf
-sudo modprobe -r ntfs3 || true
-sudo modprobe -r ntfs || true
 sudo apt update
 
 sudo apt install -y --no-install-recommends gvfs gvfs-backends scrot

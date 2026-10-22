@@ -3,7 +3,7 @@
 sudo apt update
 
 sudo apt install -y --no-install-recommends gvfs gvfs-backends scrot
-sudo apt install -y --no-install-recommends git wget 7zip unzip zip exfatprogs dosfstools
+sudo apt install -y --no-install-recommends git wget 7zip unzip zip exfatprogs dosfstools librsvg2-common
 sudo apt install -y --no-install-recommends pipewire pipewire-audio-client-libraries pipewire-pulse pipewire-alsa wireplumber pavucontrol pnmixer
 sudo apt install -y --no-install-recommends udisks2
 
@@ -44,6 +44,7 @@ mkdir -p ~/.config/pnmixer
 mkdir -p ~/.config/picom
 mkdir -p ~/.config/ranger
 mkdir -p ~/.config/cava
+mkdir -p ~/.config/jgmenu
 mkdir -p ~/.local/share/gxkb/flags
 mkdir -p ~/.local/bin
 
@@ -65,6 +66,7 @@ wget -O ~/.config/openbox/autostart https://raw.githubusercontent.com/fakename00
 wget -O ~/.config/ranger/rc.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/ranger/rc.conf
 wget -O ~/.config/cava/config https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/cava/config
 wget -O ~/.config/pcmanfm/default/pcmanfm.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pcmanfm/default/pcmanfm.conf
+wget -O ~/.config/jgmenu/append.csv https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/jgmenu/append.csv
 
 cat << EOF > $HOME/.config/pcmanfm/default/desktop-items-0.conf
 [*]

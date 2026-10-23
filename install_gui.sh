@@ -98,6 +98,6 @@ EOF
 
 echo "exec dbus-launch --exit-with-session openbox-session" > ~/.xinitrc
 
-sudo systemctl --global enable --now pipewire.service wireplumber.service pipewire-pulse.service
+systemctl --global enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
 startx

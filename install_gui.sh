@@ -89,8 +89,6 @@ show_trash=1
 show_mounts=1
 EOF
 
-touch ~/.config/openbox/.first_run
-
 echo "exec dbus-launch --exit-with-session openbox-session" > ~/.xinitrc
 
 systemctl --user enable pipewire.service pipewire-pulse.service wireplumber.service

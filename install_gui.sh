@@ -34,7 +34,6 @@ echo "en_US.UTF-8 UTF-8" | sudo tee /etc/locale.gen
 echo "ru_RU.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
 sudo locale-gen
 sudo update-locale LANG=ru_RU.UTF-8 LANGUAGE=ru_RU:ru LC_CTYPE="ru_RU.UTF-8" LC_NUMERIC="ru_RU.UTF-8" LC_TIME="ru_RU.UTF-8" LC_COLLATE="ru_RU.UTF-8" LC_MONETARY="ru_RU.UTF-8" LC_MESSAGES="ru_RU.UTF-8" LC_PAPER="ru_RU.UTF-8" LC_NAME="ru_RU.UTF-8" LC_ADDRESS="ru_RU.UTF-8" LC_TELEPHONE="ru_RU.UTF-8" LC_MEASUREMENT="ru_RU.UTF-8" LC_IDENTIFICATION="ru_RU.UTF-8" LC_ALL="ru_RU.UTF-8"
-source /etc/default/locale
 
 mkdir -p ~/.icons ~/.themes
 
@@ -98,6 +97,6 @@ EOF
 
 echo "exec dbus-launch --exit-with-session openbox-session" > ~/.xinitrc
 
-systemctl --global enable --now pipewire.service wireplumber.service pipewire-pulse.service
+systemctl enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
-startx
+echo -e "Пожалуйста напишите exit, а затем startx"

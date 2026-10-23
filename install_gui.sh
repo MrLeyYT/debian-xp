@@ -77,7 +77,7 @@ wget -O ~/.config/cava/config https://raw.githubusercontent.com/fakename00121v/d
 wget -O ~/.config/pcmanfm/default/pcmanfm.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pcmanfm/default/pcmanfm.conf &
 wget -O ~/.config/jgmenu/append.csv https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/jgmenu/append.csv &
 
-wait
+wait $(pidof wget)
 chmod +x ~/.local/bin/layout_switch.sh
 
 cat << EOF > $HOME/.config/pcmanfm/default/desktop-items-0.conf

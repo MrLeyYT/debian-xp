@@ -99,5 +99,14 @@ echo "exec dbus-launch --exit-with-session openbox-session" > ~/.xinitrc
 
 systemctl --user enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
-echo 'sed -i "$d" "$HOME/.bashrc" && exec startx' >> "$HOME/.bashrc"
+touch "$HOME/.startx_once_flag"
+cat << 'EOF' >> "$HOME/.bashrc"
+# if you see this block pls remove it
+if [ -f "$HOME/.startx_once_flag" ]; then
+    rm "$HOME/.startx_once_flag"
+    exec startx
+fi
+#end of block
+EOF
+
 loginctl terminate-user "$USER"

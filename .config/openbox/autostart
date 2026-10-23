@@ -7,4 +7,4 @@ pcmanfm --desktop &
 gxkb &
 udiskie -t -F &
 pnmixer &
-(sleep 1 && jgmenu) &
+(sleep 1 && jgmenu --hide-on-startup) &

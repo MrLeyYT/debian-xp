@@ -1,5 +1,5 @@
 setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle" &
-xcape -e 'Super_L=Control_R|Alt_R|Super_L|Insert' &
+xcape -e 'Super_L=Control_L|Alt_L|Super_L|Insert' &
 tint2 &
 dunst &
 picom &

@@ -58,25 +58,27 @@ mkdir -p ~/.config/jgmenu
 mkdir -p ~/.local/share/gxkb/flags
 mkdir -p ~/.local/bin
 
-wget -O ~/.local/bin/layout_switch.sh https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.local/bin/layout_switch.sh
+wget -O ~/.local/bin/layout_switch.sh https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.local/bin/layout_switch.sh &
+
+wget -O ~/.local/share/gxkb/flags/ru.png https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.local/share/gxkb/flags/ru.png &
+wget -O ~/.local/share/gxkb/flags/us.png https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.local/share/gxkb/flags/us.png &
+
+wget -O ~/.config/tint2/tint2rc https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/tint2/tint2rc &
+wget -O ~/.config/pcmanfm/default/wallpaper.jpg https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pcmanfm/default/wallpaper.jpg &
+wget -O ~/.config/gtk-3.0/settings.ini https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/gtk-3.0/settings.ini &
+wget -O ~/.config/openbox/rc.xml https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/openbox/rc.xml &
+wget -O ~/.config/mimeapps.list https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/mimeapps.list &
+wget -O ~/.config/pnmixer/config https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pnmixer/config &
+wget -O ~/.config/alacritty/alacritty.toml https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/alacritty/alacritty.toml &
+wget -O ~/.config/picom/picom.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/picom/picom.conf &
+wget -O ~/.config/openbox/autostart https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/openbox/autostart &
+wget -O ~/.config/ranger/rc.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/ranger/rc.conf &
+wget -O ~/.config/cava/config https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/cava/config &
+wget -O ~/.config/pcmanfm/default/pcmanfm.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pcmanfm/default/pcmanfm.conf &
+wget -O ~/.config/jgmenu/append.csv https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/jgmenu/append.csv &
+
+wait
 chmod +x ~/.local/bin/layout_switch.sh
-
-wget -O ~/.local/share/gxkb/flags/ru.png https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.local/share/gxkb/flags/ru.png
-wget -O ~/.local/share/gxkb/flags/us.png https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.local/share/gxkb/flags/us.png
-
-wget -O ~/.config/tint2/tint2rc https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/tint2/tint2rc
-wget -O ~/.config/pcmanfm/default/wallpaper.jpg https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pcmanfm/default/wallpaper.jpg
-wget -O ~/.config/gtk-3.0/settings.ini https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/gtk-3.0/settings.ini
-wget -O ~/.config/openbox/rc.xml https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/openbox/rc.xml
-wget -O ~/.config/mimeapps.list https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/mimeapps.list
-wget -O ~/.config/pnmixer/config https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pnmixer/config
-wget -O ~/.config/alacritty/alacritty.toml https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/alacritty/alacritty.toml
-wget -O ~/.config/picom/picom.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/picom/picom.conf
-wget -O ~/.config/openbox/autostart https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/openbox/autostart
-wget -O ~/.config/ranger/rc.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/ranger/rc.conf
-wget -O ~/.config/cava/config https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/cava/config
-wget -O ~/.config/pcmanfm/default/pcmanfm.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pcmanfm/default/pcmanfm.conf
-wget -O ~/.config/jgmenu/append.csv https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/jgmenu/append.csv
 
 cat << EOF > $HOME/.config/pcmanfm/default/desktop-items-0.conf
 [*]

@@ -1,10 +1,17 @@
 #!/bin/bash
 
-sudo sh -c 'echo "blacklist ntfs3" > /etc/modprobe.d/blacklist-ntfs3.conf'
-sudo modprobe -r ntfs3
 sudo apt update
 sudo apt install -y --no-install-recommends ntfs-3g exfatprogs dosfstools
-sudo ln -sf /sbin/mount.ntfs-3g /sbin/mount.ntfs
+
+sudo sh -c 'echo "blacklist ntfs3" > /etc/modprobe.d/blacklist-ntfs3.conf'
+sudo modprobe -r ntfs3
+sudo mkdir -p /etc/udev/rules.d
+sudo sh -c 'cat <<EOF > /etc/udev/rules.d/99-ntfs3-disable.rules
+SUBSYSTEM=="block", ENV{ID_FS_TYPE}=="ntfs", ENV{ID_FS_TYPE}="ntfs-3g"
+EOF'
+
+sudo udevadm control --reload-rules && sudo udevadm trigger
+#sudo ln -sf /sbin/mount.ntfs-3g /sbin/mount.ntfs
 
 sudo apt install -y --no-install-recommends gvfs gvfs-backends gvfs-trash scrot
 sudo apt install -y --no-install-recommends git wget 7zip unzip zip

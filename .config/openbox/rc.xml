@@ -178,7 +178,7 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key="LC-LA-W-Insert">
+    <keybind key="C-A-W-Insert">
       <action name="Execute">
         <command>jgmenu_run</command>
       </action>

@@ -107,7 +107,7 @@ sudo mkdir -p /usr/share/backgrounds
 sudo wget -O /etc/lightdm/lightdm.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/lightdm/lightdm.conf
 sudo wget -O /etc/lightdm/lightdm-gtk-greeter.conf https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/lightdm/lightdm-gtk-greeter.conf
 sudo wget -O /usr/share/xsessions/openbox.desktop https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/xsessions/openbox.desktop
-sudo wget -O /usr/share/backgrounds/lightdm-wallpaper.jpg https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/lightdm/wallpaper.jpg
+sudo wget -O /usr/share/backgrounds/lightdm-wallpaper.jpg https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/.config/pcmanfm/default/wallpaper.jpg
 
 sudo rm -f /etc/systemd/system/display-manager.service
 sudo ln -s /lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service

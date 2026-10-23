@@ -99,4 +99,5 @@ echo "exec dbus-launch --exit-with-session openbox-session" > ~/.xinitrc
 
 systemctl --user enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
-echo -e "Пожалуйста напишите exit, а затем startx"
+echo 'sed -i "$d" "$HOME/.bashrc" && exec startx' >> "$HOME/.bashrc"
+loginctl terminate-user "$USER"

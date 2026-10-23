@@ -95,6 +95,32 @@ show_trash=1
 show_mounts=1
 EOF
 
+sudo apt install -y --no-install-recommends lightdm lightdm-gtk-greeter
+
+sudo mkdir -p /etc/lightdm
+sudo mkdir -p /usr/share/xsessions
+
+sudo wget -O /etc/lightdm/lightdm.conf \
+    https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/lightdm/lightdm.conf
+
+sudo wget -O /etc/lightdm/lightdm-gtk-greeter.conf \
+    https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/lightdm/lightdm-gtk-greeter.conf
+
+sudo wget -O /usr/share/xsessions/openbox.desktop \
+    https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/xsessions/openbox.desktop
+
+sudo mkdir -p /usr/share/backgrounds
+sudo wget -O /usr/share/backgrounds/lightdm-wallpaper.jpg \
+    https://raw.githubusercontent.com/fakename00121v/debian-xp/refs/heads/main/lightdm/wallpaper.jpg
+
+sudo rm -f /etc/systemd/system/display-manager.service
+sudo ln -s /lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service
+
+sudo systemctl enable lightdm.service
+
+systemctl is-enabled lightdm.service && echo "  lightdm: enabled"
+ls -l /etc/systemd/system/display-manager.service
+
 echo "exec dbus-launch --exit-with-session openbox-session" > ~/.xinitrc
 
 systemctl --user enable --now pipewire.service wireplumber.service pipewire-pulse.service

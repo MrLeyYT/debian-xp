@@ -38,7 +38,7 @@ source /etc/default/locale
 
 mkdir -p ~/.icons ~/.themes
 
-git clone --depth 1 https://github.com/B00merang-Artwork/Windows-XP.git ~/.icons/Windows-XP
+git clone --depth 1 https://github.com/B00merang-Artwork/Windows-XP.git ~/.icons/Windows-XP &
 
 TMP="$(mktemp -d)"
 git clone --depth 1 https://github.com/B00merang-Project/Windows-XP.git "$TMP/gtk"
@@ -98,8 +98,7 @@ EOF
 
 echo "exec dbus-launch --exit-with-session openbox-session" > ~/.xinitrc
 
-systemctl --user enable pipewire.service pipewire-pulse.service wireplumber.service
-systemctl --user start pipewire.service pipewire-pulse.service wireplumber.service
+sudo systemctl --global enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
 sudo -v
 

@@ -97,6 +97,6 @@ EOF
 
 echo "exec dbus-launch --exit-with-session openbox-session" > ~/.xinitrc
 
-systemctl enable --now pipewire.service wireplumber.service pipewire-pulse.service
+systemctl --user enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
 echo -e "Пожалуйста напишите exit, а затем startx"

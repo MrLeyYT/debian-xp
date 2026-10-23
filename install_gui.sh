@@ -100,6 +100,4 @@ echo "exec dbus-launch --exit-with-session openbox-session" > ~/.xinitrc
 
 sudo systemctl --global enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
-sudo -v
-
 startx
